@@ -23,7 +23,7 @@ if(Input::exists()) {
             if($login) {
                 Redirect::to('index.php');
             } else {
-                echo '<p>Incorrect username or password</p>';
+                echo '<p>Incorrect Username or Password</p>';
             }
         } else {
             foreach($validate->errors() as $error) {
@@ -36,12 +36,12 @@ if(Input::exists()) {
 
 <form action="" method="post">
     <div class="field">
-        <label for='username'>Username</label>
+        <label for='username'>Username:</label>
         <input type="text" name="username" id="username">
     </div>
 
     <div class="field">
-        <label for='password'>Password</label>
+        <label for='password'>Password:</label>
         <input type="password" name="password" id="password">
     </div>
 
